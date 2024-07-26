@@ -248,7 +248,7 @@ li:hover .dropdown-content {
     padding: 10px 0;
 }
 #hero button {
-   background-image: url("Capture.PNG");
+   background-image: url("../images/nightcrowbanner.jpg");
    background-color: transparent;
    background-size: cover;
    border: 0;
