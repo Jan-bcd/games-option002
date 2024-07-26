@@ -1,5 +1,5 @@
 import {accounts} from '../data/accounts.js';
-import {products, seeAccountDetails} from '../data/products.js';
+import {seeAccountDetails} from '../data/products.js';
 
 let accountsHTML = '';
 

@@ -1,5 +1,5 @@
 import {featured} from '../data/featured.js';
-import {picks, seeFeaturedDetails} from '../data/picks.js';
+import {seeFeaturedDetails} from '../data/picks.js';
 
 let featuredHTML = '';
 
