@@ -1,6 +1,6 @@
 export let accounts = [{
   id: 'account1',
-  image1:'../img/accounts/account1/1.jpg',
+  image1:'./img/accounts/account1/1.jpg',
   image2:'../img/accounts/account1/2.jpg',
   image3:'../img/accounts/account1/3.jpg',
   image4:'../img/accounts/account1/4.jpg',
