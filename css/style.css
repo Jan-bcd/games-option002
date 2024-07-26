@@ -544,7 +544,7 @@ footer .copyright {
 
 /* Shop Page mir4 */
 #page-header-mir4{
-    background-image: url("/images/mir4banner.png");
+    background-image: url("../images/mir4banner.png");
     width: 100%;
     height: 30vh;
     background-size: cover;
@@ -558,7 +558,7 @@ footer .copyright {
 
 /* Shop Page RO */
 #page-header-ro{
-    background-image: url("/images/download.jpg");
+    background-image: url("../images/download.jpg");
     width: 100%;
     height: 30vh;
     background-size: cover;
