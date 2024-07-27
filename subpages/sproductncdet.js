@@ -17,7 +17,7 @@ products.forEach((productsItem) => {
   productsSummaryHTML +=
   
   `
-  <div class="container js-account-container">
+  <div class="container js-account-container-${matchingAccount.id}">
     <div class="slider-feat">
       <div class="slides">
         <div class="slide"><img src="${matchingAccount.image1}" alt="Slide 1"></div>
@@ -80,7 +80,7 @@ products.forEach((productsItem) => {
         <span class="stat-2">${matchingAccount.hightlight}</span>
       </div>
     </div>
-    <a class="close-info js-close-link" href="#" data-account-id="${matchingAccount.id}">close</a>
+    <a class="close-info js-close-link" href="./shopnc.html" data-account-id="${matchingAccount.id}">close</a>
   </div>
   `;
 });
@@ -91,5 +91,8 @@ document.querySelectorAll('.js-close-link').forEach((link) => {
   link.addEventListener('click', () => {
     const accountId = link.dataset.accountId;
     closeAccountDetails(accountId);
+
+    const container = document.querySelector(`.js-account-container-${accountId}`);
+    container.remove();
   });
 });
