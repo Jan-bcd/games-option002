@@ -1,7 +1,7 @@
-import {products, closeAccountDetails} from '../data/products.js';
+import {products} from '../data/products.js';
 import {accounts} from '../data/accounts.js';
 
-let accountSummaryHTML = '';
+let productsSummaryHTML = '';
 
 products.forEach((productsItem) => {
   const accountId = productsItem.accountId;
@@ -10,14 +10,14 @@ products.forEach((productsItem) => {
 
   accounts.forEach((account) => {
     if (account.id === accountId) {
-      matchingAccount = account;
+      matchingAccount = account; 
     }
-    
   });
-  accountSummaryHTML +=
+  
+  productsSummaryHTML +=
   
   `
-  <div class="container js-account-container-${matchingAccount.id}">
+  <div class="container js-account-container">
     <div class="slider-feat">
       <div class="slides">
         <div class="slide"><img src="${matchingAccount.image1}" alt="Slide 1"></div>
@@ -61,7 +61,7 @@ products.forEach((productsItem) => {
       </div>
       <div  class="account-info">
         <span class="stat-1">Selling Price:</span>
-        <span class="stat-2">USD - ${matchingAccount.price}</span>
+        <span class="stat-2">${matchingAccount.price}</span>
       </div>
       <div  class="account-info">
         <span class="stat-1">Account type:</span>
@@ -80,19 +80,16 @@ products.forEach((productsItem) => {
         <span class="stat-2">${matchingAccount.hightlight}</span>
       </div>
     </div>
-    <a class="close-info js-close-link" href="shopnc.html" data-account-id="${matchingAccount.id}">close</a>
+    <a class="close-info js-close-link" href="#" data-account-id="${matchingAccount.id}">close</a>
   </div>
   `;
 });
 
-document.querySelector('.js-accounts-prodetails').innerHTML = accountSummaryHTML;
+document.querySelector ('.js-accounts-prodetails').innerHTML = productsSummaryHTML;
 
 document.querySelectorAll('.js-close-link').forEach((link) => {
   link.addEventListener('click', () => {
     const accountId = link.dataset.accountId;
-    closeAccountDetails(accountId);
-    
-    const container = document.querySelector(`.js-account-container-${accountId}`);
-    container.remove();
+    console.log(accountId);
   });
 });

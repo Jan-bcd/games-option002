@@ -1,5 +1,5 @@
 export let accounts = [{
-  id: 'Account1',
+  id: 'account1',
   image1:'../img/accounts/Account1/1.jpg',
   image2:'../img/accounts/Account1/2.jpg',
   image3:'../img/accounts/Account1/3.jpg',
@@ -32,7 +32,7 @@ export let accounts = [{
   contact: +639165551234,
   hightlight: 'Legendary Weapon Style, Epic Mount, Epic Glider',
 }, {
-  id: 'Account2',
+  id: 'account2',
   image1:'../img/accounts/Account2/1.jpg',
   image2:'../img/accounts/Account2/2.jpg',
   image3:'../img/accounts/Account2/3.jpg',
@@ -65,7 +65,7 @@ export let accounts = [{
   contact: +639165551234,
   hightlight: 'Legendary Weapon Style, Epic Mount, Epic Glider',
 }, {
-  id: 'Account3',
+  id: 'account3',
   image1:'../img/accounts/Account3/1.jpg',
   image2:'../img/accounts/Account3/2.jpg',
   image3:'../img/accounts/Account3/3.jpg',
@@ -98,7 +98,7 @@ export let accounts = [{
   contact: +639165551234,
   hightlight: 'Legendary Weapon Style, Epic Mount, Epic Glider',
 }, {
-  id: 'Account4',
+  id: 'account4',
   image1:'../img/accounts/Account4/1.jpg',
   image2:'../img/accounts/Account4/2.jpg',
   image3:'../img/accounts/Account4/3.jpg',
