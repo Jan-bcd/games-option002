@@ -1,4 +1,4 @@
-import {products} from '../data/products.js';
+import {products, closeAccountDetails} from '../data/products.js';
 import {accounts} from '../data/accounts.js';
 
 let productsSummaryHTML = '';
@@ -90,6 +90,6 @@ document.querySelector ('.js-accounts-prodetails').innerHTML = productsSummaryHT
 document.querySelectorAll('.js-close-link').forEach((link) => {
   link.addEventListener('click', () => {
     const accountId = link.dataset.accountId;
-    console.log(accountId);
+    closeAccountDetails(accountId);
   });
 });

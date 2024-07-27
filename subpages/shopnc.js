@@ -1,4 +1,5 @@
 import {accounts} from '../data/accounts.js';
+import {products, seeAccountDetails } from '../data/products.js';
 
 let accountsHTML = '';
 
@@ -27,7 +28,7 @@ accounts.forEach((account) => {
         <span class="stat-1">Selling Price:</span>
         <span class="stat-2">USD - ${account.price}</span>
       </div>
-      <button class="details js-see-account-details" data-account-id="${account.id}" onclick="window.location.href='#';">See Details</button>
+      <button class="details js-see-account-details" data-account-id="${account.id}" onclick="window.location.href='./sproductncdet.html';">See Details</button>
     </div>
   </div>
   `
@@ -35,8 +36,12 @@ accounts.forEach((account) => {
 
 document.querySelector('.js-pro-account-container').innerHTML = accountsHTML;
 
+
+
 document.querySelectorAll('.js-see-account-details').forEach((button) => {
   button.addEventListener('click', () => {
-    console.log('added');
+    const accountId = button.dataset.accountId;
+    seeAccountDetails (accountId);
   });
 });
+
