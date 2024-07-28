@@ -1,21 +1,21 @@
-import {products, closeAccountDetails} from '../data/products.js';
+import {product, closeAccountDetails} from '../data/products.js';
 import {accounts} from '../data/accounts.js';
 
-let productsSummaryHTML = '';
+let productsummaryHTML = '';
 
-products.forEach((productsItem) => {
-  const accountId = productsItem.accountId;
+product.forEach((productItem) => {
+  const accountId = productItem.accountId;
 
   let matchingAccount;
 
   accounts.forEach((account) => {
     if (account.id === accountId) {
-      matchingAccount = account; 
+      matchingAccount = account;
     }
   });
-  
-  productsSummaryHTML +=
-  
+
+  productsummaryHTML +=
+
   `
   <div class="container js-account-container-${matchingAccount.id}">
     <div class="slider-feat">
@@ -85,13 +85,13 @@ products.forEach((productsItem) => {
   `;
 });
 
-document.querySelector ('.js-accounts-prodetails').innerHTML = productsSummaryHTML;
+document.querySelector('.js-accounts-prodetails').innerHTML = productsummaryHTML;
 
 document.querySelectorAll('.js-close-link').forEach((link) => {
   link.addEventListener('click', () => {
     const accountId = link.dataset.accountId;
     closeAccountDetails(accountId);
-
+    
     const container = document.querySelector(`.js-account-container-${accountId}`);
     container.remove();
   });
