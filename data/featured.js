@@ -60,8 +60,8 @@
   serverName: 'SEA-203',
   class:'SNIPER',
   ign: 'xxxbcdxxx',
-  level: 45,
-  price: 150,
+  level: 49,
+  price: 200,
   contact: +639165551234,
   hightlight: 'Epic Weapon Style, Epic Mount, Epic Glider',
 }, {
