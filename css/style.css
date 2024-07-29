@@ -902,6 +902,9 @@ footer .copyright {
         font-weight: 40px;
         color: rgb(237, 240, 240);
         }
+    .slide-image {
+        height: 85%;
+    }
     #product1 .pro-container {
         width: 100%;
         display: flex;
@@ -1026,12 +1029,17 @@ footer .copyright {
         font-size: 18px;
     }
     #prodetails .close-info {
-        width: 50%;
-        text-align: center;
+        width: 100%;
+        height: 30px;
+        border-radius: 8px;
+        background-color:#555a58 ;
         text-decoration: none;
         color: #dcdfec;
-        padding-bottom: 10px;
+        padding-top: 5px;
         margin-left: 0;
+    }
+    #prodetails .close-info a:hover {
+        background-color: #4a967f;
     }
     #prodetails .single-pro-details .account-info{
         width: 100%;
@@ -1040,23 +1048,25 @@ footer .copyright {
     }
     #prodetails .single-pro-details .info-1 {
         width: 45%;
+        font-size: 20px;
         color: rgb(158, 158, 150);
     }
     #prodetails .single-pro-details .stat-1 {
         width: 45%;
+        font-size: 20px;
         color: rgb(158, 158, 150);
     }
     #prodetails .single-pro-details .info-2{
         font-weight: 500;
         width: 55%;
         color: #abf71f;
-        font-size: 14px;
+        font-size: 18px;
     }
     #prodetails .single-pro-details .stat-2{
         font-weight: 500;
         width: 55%;
         color: #abf71f;
-        font-size: 14px;
+        font-size: 18px;
     }
     .details a{
         color: #c5bfbf;
@@ -1269,12 +1279,17 @@ footer .copyright {
         font-size: 18px;
     }
     #prodetails .close-info {
-        width: 50%;
-        text-align: center;
+        width: 100%;
+        height: 30px;
+        border-radius: 8px;
+        background-color:#555a58 ;
         text-decoration: none;
         color: #dcdfec;
-        padding-bottom: 10px;
+        padding-top: 5px;
         margin-left: 0;
+    }
+    #prodetails .close-info a:hover {
+        background-color: #4a967f;
     }
     #prodetails .single-pro-details .account-info{
         width: 100%;
@@ -1484,24 +1499,27 @@ footer .copyright {
         width: 100%;
         height: 20vh;
         }
-    h2 {
-        font-size: 18px;
+    #banner h2 {
+        font-size: 20px;
+        padding: 5px;
         }
-
-    h4 {
-        font-size: 16px;
+    #banner h4 {
+        font-size: 20px;
+        padding: 5px;
     }
     #newsletter h4 {
         font-size: 20px;
     }
     #newsletter p {
         font-size: 16px;
+        color: #646b68;
+        padding: 8px 0;
     }
     #newsletter span {
         color: green;
     }
     #newsletter input{
-        height: 3.125rem;
+        height: 3rem;
         padding: 0 1.25rem;
         font-size: 14px;
         width: 100%;
@@ -1510,14 +1528,6 @@ footer .copyright {
         display: flex;
         width: 100%;
         padding: 10px 0;
-    }
-    h4 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 18px;
-        color: #646b68;
-        padding: 8px 0;
     }
 }
 
@@ -1557,10 +1567,16 @@ footer .copyright {
     }
     #prodetails .close-info {
         width: 100%;
+        height: 30px;
+        border-radius: 8px;
+        background-color:#646b68 ;
         text-decoration: none;
         color: #dcdfec;
-        padding-bottom: 10px;
+        padding-top: 5px;
         margin-left: 0;
+    }
+    #prodetails .close-info a:hover {
+        background-color: #4a967f;
     }
     #prodetails .single-pro-details .account-info{
         width: 100%;
