@@ -2,15 +2,13 @@
   
   if (!picks) {
     picks = [{
-      featureTag: 'featured0',
+      featureTag: 'featured1',
       quantity: 1 
     },{
-      featureTag: 'featured00',
+      featureTag: 'featured2',
       quantity: 1
     }];
   }
-
-  
 
   function saveToStorage() {
     localStorage.setItem('picks', JSON.stringify(picks));

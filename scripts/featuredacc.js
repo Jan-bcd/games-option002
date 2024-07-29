@@ -13,6 +13,9 @@ picks.forEach((picksItem) => {
       matchingFeature = feature;
     }
   });
+
+  console.log(matchingFeature);
+  
   featuredSummaryHTML +=
 `
   <div class="container js-container-featured-${matchingFeature.tag}">
