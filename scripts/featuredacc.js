@@ -90,7 +90,6 @@ picks.forEach((picksItem) => {
 `;
 });
 
-
 document.querySelector('.js-prodetails-featured').innerHTML = featuredSummaryHTML;
 
 document.querySelectorAll('.js-close-link').forEach((link) => {

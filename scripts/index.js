@@ -1,5 +1,5 @@
 import {featured} from '../data/featured.js';
-import {seeFeaturedDetails} from '../data/picks.js';
+import {picks, saveToStorage} from '../data/picks.js';
 
 let featuredHTML = '';
 
@@ -39,6 +39,9 @@ document.querySelector('.js-pro-container').innerHTML = featuredHTML;
 document.querySelectorAll('.js-see-details').forEach((button) => {
   button.addEventListener('click', () => {
     const featureTag = button.dataset.featureTag;
-    seeFeaturedDetails(featureTag);
+    picks.push({
+      featureTag: featureTag,
+    });
+    saveToStorage();
   });
 });

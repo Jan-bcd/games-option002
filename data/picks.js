@@ -10,29 +10,11 @@
     }];
   }
 
-  function saveToStorage() {
+  export function saveToStorage() {
     localStorage.setItem('picks', JSON.stringify(picks));
   }
 
-  export function seeFeaturedDetails(featureTag) {
-    let matchingItem;
   
-      picks.forEach((picksItem) => {
-        if (featureTag === picksItem.featureTag) {
-          matchingItem = picksItem;
-        }
-      });
-  
-      if (matchingItem) {
-        matchingItem.quantity += 1;
-      } else {
-        picks.push({
-          featureTag: featureTag,
-          quantity: 1
-        });
-      }
-      saveToStorage();
-  }
 
   export function closeFeaturedDetails (featureTag) {
     const newPicks = [];
