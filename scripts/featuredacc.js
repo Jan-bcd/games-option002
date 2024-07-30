@@ -13,8 +13,6 @@ picks.forEach((picksItem) => {
       matchingFeature = feature;
     }
   });
-
-  console.log(matchingFeature);
   
   featuredSummaryHTML +=
 `

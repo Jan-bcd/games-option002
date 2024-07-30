@@ -2,11 +2,9 @@
   
   if (!picks) {
     picks = [{
-      featureTag: 'featured1',
-      quantity: 1 
+      featureTag: 'featured1', 
     },{
       featureTag: 'featured2',
-      quantity: 1
     }];
   }
 
