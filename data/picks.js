@@ -2,9 +2,9 @@
   
   if (!picks) {
     picks = [{
-      featureTag: 'featured1', 
+      featureTag: 'featured0', 
     },{
-      featureTag: 'featured2',
+      featureTag: 'featured00',
     }];
   }
 
