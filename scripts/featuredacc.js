@@ -99,4 +99,3 @@ document.querySelectorAll('.js-close-link').forEach((link) => {
     box.remove();
   });
 });
-

@@ -12,8 +12,6 @@
     localStorage.setItem('picks', JSON.stringify(picks));
   }
 
-  
-
   export function closeFeaturedDetails (featureTag) {
     const newPicks = [];
 

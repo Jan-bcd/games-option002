@@ -8,8 +8,6 @@ if (!product) {
   }];
 }
 
-
-
 export function saveToStorage() {
   localStorage.setItem('product', JSON.stringify(product));
 }
