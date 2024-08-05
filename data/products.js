@@ -1,6 +1,6 @@
 export let product = JSON.parse(localStorage.getItem('product'));
 
-if (!product) {
+if (product) {
   product = [{
     accountId: 'account0'
   }, {
