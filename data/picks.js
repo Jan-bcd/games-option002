@@ -1,6 +1,6 @@
   export let picks = JSON.parse(localStorage.getItem('picks'));
   
-  if (!picks) {
+  if (picks) {
     picks = [{
       featureTag: 'featured0', 
     },{
